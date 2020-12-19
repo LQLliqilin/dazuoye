@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"/>
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.scwang.smart.refresh.header.BezierRadarHeader
+            app:srlPrimaryColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    <com.scwang.smart.refresh.footer.BallPulseFooter
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
